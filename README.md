@@ -3,7 +3,7 @@
 </div>
 
 <div align="center">
-  <em><b>Lexon</b> is a lightweight and efficient pseudocode interpreter implemented in C++ using Flex and Bison.</em>
+  <em><b>Lexon</b> is a pseudocode interpreter implemented in C++ using Flex and Bison.</em>
 </div>
 
 <br>
@@ -14,6 +14,12 @@
   <img src="https://img.shields.io/badge/tests-passing-brightgreen.svg" alt="Tests" />
   <img src="https://img.shields.io/badge/license-MIT-brightgreen.svg" alt="License" />
 </p>
+
+## Overview
+
+Lexon is a pseudocode language designed for simplicity and readability. It supports common control structures, arithmetic, strings, logical operations, and built-in constants.
+
+> This project was developed as part of my **Computer Engineering degree** to learn and demonstrate the implementation of interpreters, including lexical analysis, parsing, and syntax-directed translation.
 
 ## Reserved Keywords and Constants
 
@@ -50,8 +56,8 @@
 - Can include **letters**, **digits**, and **underscores** (`_`).
 - Cannot end in `_` or contain consecutive underscores (`__`).
 - Examples:
-  - ✅ `total`, `x_1`, `user_name`
-  - ❌ `_var`, `data_`, `value__x`
+  - Valid: `total`, `x_1`, `user_name`
+  - Invalid: `_var`, `data_`, `value__x`
 
 ## Numbers
 
@@ -104,16 +110,9 @@
 To build and run Lexon, make sure the following are installed:
 
 - `g++` (C++ compiler)
-- `flex` (lexer generator)
-- `bison` (parser generator)
+- `flex 2.5.35` (lexer generator)
+- `bison 2.3` (parser generator)
 - `make` (build tool)
-
-On Ubuntu/Debian systems:
-
-```bash
-sudo apt update
-sudo apt install g++ flex bison make
-```
 
 ## Running the Interpreter
 
